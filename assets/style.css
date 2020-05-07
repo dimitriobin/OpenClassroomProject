@@ -1,5 +1,5 @@
 @media screen and (min-width:992px) {
-    #mobile {
+    #mobile_header {
         display: none;
     }
 }
