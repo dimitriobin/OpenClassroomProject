@@ -1,6 +1,8 @@
 /* Extra small devices (portrait phones, less than 576px) */
 :root {
     --primary: #ffbd59;
+    --primary-darker: rgba(0, 0, 0, 0.2);
+    --secondary: rgba(0, 0, 0, 0.8);
     --font-primary: #000000;
     --font-secondary: rgba(0, 0, 0, 0.7);
 }
@@ -13,12 +15,23 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     color: var(--font-primary);
+    line-height: 1.3em;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--font-primary);
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Raleway', sans-serif;
+    line-height: 1.4em;
 }
 
 h1 {
@@ -27,8 +40,9 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     font-size: 1.8em;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h3 {
@@ -71,13 +85,67 @@ header h1 span {
 }
 
 #mobile_header {
-    margin: 90px auto;
+    margin: 70px auto;
 }
 
 #mobile_header h1,
 #mobile_header p {
     width: 355px;
     margin: 0 auto;
+}
+
+aside {
+    background-color: var(--primary);
+}
+
+aside h2 {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 0.35em 0;
+}
+
+aside p,
+aside address {
+    padding: 35px 50px 50px 50px;
+}
+
+#photo_de_profil {
+    text-align: center;
+}
+
+#photo_de_profil img {
+    display: inline-block;
+    margin: 65px auto 40px auto;
+    border: 5px solid var(--primary-darker);
+    border-radius: 50%;
+}
+
+
+#contact ul li {
+    margin-bottom: 23px;
+}
+
+#contact ul li:last-child {
+    margin-bottom: 0;
+}
+
+#a_propos p::first-letter {
+    margin-left: 3rem;
+}
+
+#loisir-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 35px 40px 35px;
+}
+
+#loisir-icons i {
+    display: inline-block;
+    color: var(--secondary);
+    padding: 20px;
+    border: 3px solid var(--secondary);
+    border-radius: 50%;
 }
 
 /* Small devices (landscape phones, 576px and up) */
