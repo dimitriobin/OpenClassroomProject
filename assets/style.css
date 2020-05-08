@@ -18,6 +18,12 @@ body {
     line-height: 1.3em;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 p {
     text-align: justify;
 }
@@ -96,6 +102,7 @@ header h1 span {
 
 aside {
     background-color: var(--primary);
+    margin: 0 auto;
 }
 
 aside h2 {
@@ -147,6 +154,8 @@ aside address {
     border: 3px solid var(--secondary);
     border-radius: 50%;
 }
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width:576px) {}
