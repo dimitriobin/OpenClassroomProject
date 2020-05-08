@@ -1,28 +1,26 @@
-<<<<<<< HEAD
-@media screen and (min-width:992px) {
-    #mobile_header {
-        display: none;
-    }
-}
-
-@media screen and (max-width:992px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width:575px) {
     #desktop_header {
         display: none;
     }
 }
 
-aside {
-    background-color: orange;
-=======
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width:576px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width:768px) {}
+
+
+/* Large devices (desktops, 992px and up) */
 @media screen and (min-width:992px) {
     #mobile {
         display: none;
     }
 }
 
-@media screen and (max-width:992px) {
-    #desktop_header {
-        display: none;
-    }
->>>>>>> 1a156d9... display des deux headers
-}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px) {}
