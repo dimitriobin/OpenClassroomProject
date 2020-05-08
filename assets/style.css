@@ -1,7 +1,18 @@
 /* Extra small devices (portrait phones, less than 576px) */
+:root {
+    --primary: #ffbd59;
+    --font-primary: #000000;
+    --font-secondary: rgba(0, 0, 0, 0.7);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    color: var(--font-primary);
 }
 
 h1,
@@ -30,12 +41,44 @@ h4 {
     font-weight: 700;
 }
 
+strong {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+header {
+    width: 100%;
+    text-align: left;
+}
+
+header p {
+    margin-top: 10px;
+    color: var(--font-secondary);
+}
+
+header h1 span {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.underline {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 2px;
+}
 
 #desktop_header {
     display: none;
 }
 
+#mobile_header {
+    margin: 90px auto;
+}
 
+#mobile_header h1,
+#mobile_header p {
+    width: 355px;
+    margin: 0 auto;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width:576px) {}
