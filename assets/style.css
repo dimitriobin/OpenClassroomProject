@@ -1,9 +1,10 @@
 /* Extra small devices (portrait phones, less than 576px) */
-@media screen and (max-width:575px) {
-    #desktop_header {
-        display: none;
-    }
+
+
+#desktop_header {
+    display: none;
 }
+
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -16,8 +17,12 @@
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width:992px) {
-    #mobile {
+    #mobile_header {
         display: none;
+    }
+
+    #desktop_header {
+        display: block;
     }
 }
 
