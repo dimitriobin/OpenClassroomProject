@@ -1,4 +1,34 @@
 /* Extra small devices (portrait phones, less than 576px) */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 700;
+}
 
 
 #desktop_header {
