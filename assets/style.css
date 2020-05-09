@@ -125,7 +125,7 @@ aside address {
     text-align: center;
 }
 
-#photo_de_profil img {
+#portrait {
     display: inline-block;
     margin: 65px auto 40px auto;
     border: 5px solid var(--primary-darker);
@@ -201,18 +201,17 @@ aside address {
     display: none;
 }
 
-#recommandation-table {
+#recommandation_articles {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-#recommandation-table article:first-child {
-    margin: 0 30px 30px 0;
-}
+#recommandation_articles article {
 
-#recommandation-table article {}
+    margin: 0 120px 30px 0;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width:576px) {}
