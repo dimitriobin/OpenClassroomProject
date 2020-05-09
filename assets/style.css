@@ -49,7 +49,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 600;
 }
 
@@ -107,13 +107,12 @@ header h1 span {
 
 aside {
     background-color: var(--primary);
-    margin: 0 auto;
 }
 
 aside h2 {
     background-color: var(--secondary);
     color: var(--primary);
-    padding: 15px 0;
+    padding: 0.3em 20px;
 }
 
 aside p,
@@ -127,7 +126,7 @@ aside address {
 
 #portrait {
     display: inline-block;
-    margin: 65px auto 40px auto;
+    margin: 35px auto 35px auto;
     border: 5px solid var(--primary-darker);
     border-radius: 50%;
 }
@@ -148,14 +147,15 @@ aside address {
 #loisir-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 30px 35px 40px 35px;
+    justify-content: space-between;
+    padding: 30px 25px 40px 25px;
     flex-wrap: wrap;
 }
 
 #loisir-icons i {
+    font-size: 2em;
     color: var(--secondary);
-    padding: 20px;
+    padding: 0.4em;
     border: 3px solid var(--secondary);
     border-radius: 50%;
 }
@@ -214,11 +214,47 @@ aside address {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width:576px) {}
+@media screen and (min-width:576px) {
+
+    #main tr {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    #main tr:last-child {
+        margin-bottom: 0;
+    }
+
+    #main td i {
+        display: inline-block;
+        color: var(--primary);
+    }
+
+    #main td:first-child {
+        margin: 3px 10px 0 0;
+    }
+
+    #main td:nth-child(2) {
+        flex: 0 0 30%;
+    }
+
+    #main td:last-child {
+        flex: 0 0 65%;
+    }
+
+
+}
 
 
 /* Medium devices (tablets, 768px and up) */
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+    #main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
 
 
 /* Large devices (desktops, 992px and up) */
@@ -230,6 +266,34 @@ aside address {
     #desktop_header {
         display: block;
     }
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    aside {
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside p,
+    aside address {
+        padding: 35px 40px 50px 40px;
+    }
+
+    #portrait {
+
+        width: 65%;
+    }
+
+    #loisirs {
+        margin-top: auto;
+    }
+
 }
 
 
