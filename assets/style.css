@@ -1,4 +1,6 @@
 /* Extra small devices (portrait phones, less than 576px) */
+
+/* Ici mes variables pour les couleurs */
 :root {
     --primary: #cfdbd5;
     --primary-darker: rgba(0, 0, 0, 0.2);
@@ -8,14 +10,17 @@
     --font-secondary: rgba(36, 36, 35, 0.8);
 }
 
+/* Mon image de fond */
 html {
     background: url(/assets/images/pexels-photo-4039781.jpeg) repeat center fixed;
 }
 
+/* Cette propriété pour éviter les décalages dans les tailles des blocks */
 * {
     box-sizing: border-box;
 }
 
+/* Ici je déclare les élements généraux pour l'ensemble de la page */
 body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -23,27 +28,22 @@ body {
     color: var(--font-primary);
     line-height: 1.3em;
     padding: 0 5%;
+    /*ce padding pour que la page soit légerement décallée du fond*/
 }
 
 #container {
     max-width: 1500px;
+    /*une taille maximum pour que la page reste dans un format portrait*/
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    /*une ombre pour donner un effet de lévitation à la page*/
 }
 
-p {
-    text-align: justify;
-}
-
-a {
-    text-decoration: underline;
-    color: var(--font-primary);
-}
-
+/* déclaration des propriété typographique */
 h1,
 h2,
 h3 {
@@ -76,12 +76,22 @@ h4 {
     margin-bottom: 4px;
 }
 
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--font-primary);
+}
+
 strong {
     font-size: 1.5em;
     font-weight: 600;
     line-height: 1.5em;
 }
 
+/* propriétés du header */
 header {
     width: 100%;
     text-align: left;
@@ -102,17 +112,6 @@ header h1 span {
     padding-bottom: 2px;
 }
 
-
-
-#mobile_header {
-    margin: 70px auto;
-    text-align: center;
-}
-
-#mobile_header p {
-    text-align: center;
-}
-
 #mobile_header,
 #desktop_header {
     display: block;
@@ -123,7 +122,20 @@ header h1 span {
     display: none;
 }
 
+/* propriétés particulières au header pour la version mobile */
+#mobile_header {
+    margin: 70px auto;
+    text-align: center;
+}
+
+#mobile_header p {
+    text-align: center;
+}
+
+/* mise en forme des éléments généraux du aside */
 aside {
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary);
 }
 
@@ -138,13 +150,14 @@ aside address {
     padding: 35px 50px 50px 50px;
 }
 
+/* mise en forme des éléments particuliers du aside */
 #photo_de_profil {
     text-align: center;
 }
 
 #portrait {
     width: 350px;
-    display: inline-block;
+    display: block;
     margin: 50px auto 50px auto;
     border: 5px solid var(--primary-darker);
     border-radius: 50%;
@@ -179,9 +192,10 @@ aside address {
     border-radius: 50%;
 }
 
+/* Mise en forme des éléments généraux de la section principale */
 #main {
     width: 100%;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 #main section {
@@ -206,8 +220,9 @@ aside address {
     margin-bottom: 30px;
 }
 
+/* mise en forme des tables */
 #main tr {
-    display: inline-block;
+    display: block;
     margin-bottom: 30px;
 }
 
@@ -225,6 +240,7 @@ aside address {
     display: none;
 }
 
+/* mise en forme de la rubrique "recommandations" */
 #recommandation_articles {
     display: flex;
     flex-direction: row;
@@ -270,7 +286,7 @@ aside address {
     }
 
     #main td:first-child {
-        margin: 3px 10px 0 0;
+        margin-right: 10px;
     }
 
     #main td:nth-child(2) {
@@ -300,6 +316,7 @@ aside address {
         padding: 5%;
     }
 
+    /* switch du header : mobile:off / desktop:on */
     #mobile_header {
         display: none;
     }
@@ -309,6 +326,7 @@ aside address {
         margin-top: 80px;
     }
 
+    /* switch de la disposition des éléments de la page */
     #container {
         display: flex;
         flex-direction: row;
@@ -316,12 +334,12 @@ aside address {
         align-items: stretch;
     }
 
+    /* changement de la mise en forme de la rubrique aside */
     aside {
-        display: flex;
         flex: 1;
-        flex-direction: column;
     }
 
+    /* changement des proportions des marges intérieures */
     aside p,
     aside address {
         padding: 35px 40px 50px 40px;
@@ -332,10 +350,12 @@ aside address {
         margin-top: 50px;
     }
 
+    /* fixation de la rubrique loisir tout en bas */
     #loisirs {
         margin-top: auto;
     }
 
+    /* changement des proportions de la section principale avec des unités adaptatives */
     #main {
         flex: 2;
         margin-left: 2vw;
@@ -351,10 +371,12 @@ aside address {
         padding: 80px 5%;
     }
 
+    /* fixation de la page au centre de l'écran */
     #container {
         margin: 0 auto;
     }
 
+    /* changement des tailles de textes, mieux adaptées aux grand écrans */
     p,
     li {
         font-size: 1.2em;
@@ -376,7 +398,7 @@ aside address {
     h2 {
         text-align: center;
         font-size: 2em;
-        font-weight: 00;
+        font-weight: 600;
     }
 
     h3 {
