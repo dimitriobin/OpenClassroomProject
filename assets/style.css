@@ -25,6 +25,7 @@ body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
+    color: rgb(36, 36, 35);
     color: var(--font-primary);
     line-height: 1.3em;
     padding: 0 5%;
@@ -71,6 +72,7 @@ h3 {
 }
 
 h4 {
+    color: rgba(36, 36, 35, 0.8);
     color: var(--font-secondary);
     font-size: 1.3em;
     font-weight: 700;
@@ -84,6 +86,7 @@ p {
 
 a {
     text-decoration: underline;
+    color: rgb(36, 36, 35);
     color: var(--font-primary);
 }
 
@@ -101,15 +104,18 @@ header {
 
 header p {
     margin-top: 10px;
+    color: rgba(36, 36, 35, 0.8);
     color: var(--font-secondary);
 }
 
 header h1 span {
+    color: #F5CB5C;
     color: var(--tertiary);
     font-weight: 500;
 }
 
 .underline {
+    border-bottom: 2px solid #F5CB5C;
     border-bottom: 2px solid var(--tertiary);
     padding-bottom: 2px;
 }
@@ -138,11 +144,14 @@ header h1 span {
 aside {
     display: flex;
     flex-direction: column;
+    background-color: #cfdbd5;
     background-color: var(--primary);
 }
 
 aside h2 {
+    background-color: #333533;
     background-color: var(--secondary);
+    color: #cfdbd5;
     color: var(--primary);
     padding: 0.3em 20px;
 }
@@ -161,6 +170,7 @@ aside address {
     width: 350px;
     display: block;
     margin: 50px auto;
+    border: 5px solid rgba(0, 0, 0, 0.2);
     border: 5px solid var(--primary-darker);
     border-radius: 50%;
 }
@@ -185,8 +195,10 @@ aside address {
 
 #loisir-icons i {
     font-size: 2em;
+    color: #333533;
     color: var(--secondary);
     padding: 0.4em;
+    border: 3px solid #F5CB5C;
     border: 3px solid var(--tertiary);
     border-radius: 50%;
 }
@@ -208,6 +220,7 @@ aside address {
 #main h2 i {
     display: inline-block;
     margin-right: 25px;
+    color: #F5CB5C;
     color: var(--tertiary);
     vertical-align: middle;
 }
@@ -215,6 +228,7 @@ aside address {
 #main h2 {
     text-align: left;
     padding-bottom: 10px;
+    border-bottom: 2px solid #F5CB5C;
     border-bottom: 2px solid var(--tertiary);
     margin-bottom: 30px;
 }
@@ -281,6 +295,7 @@ aside address {
 
     #main td i {
         display: inline-block;
+        color: #F5CB5C;
         color: var(--tertiary);
     }
 
@@ -407,6 +422,7 @@ aside address {
     }
 
     h4 {
+        color: rgba(36, 36, 35, 0.8);
         color: var(--font-secondary);
         font-size: 1.4em;
         font-weight: 700;
@@ -417,4 +433,3 @@ aside address {
         font-size: 1.4em;
         font-weight: 600;
     }
-}
