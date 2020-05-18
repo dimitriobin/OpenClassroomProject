@@ -1,0 +1,20 @@
+body {}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+aside {
+    background-color: orange;
+}
+
+
+h1 span {
+    font-weight: 400;
+    color: orange;
+}
+
+small {
+    font-weight: bold;
+}
