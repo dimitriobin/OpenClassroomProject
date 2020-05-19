@@ -1,14 +1,11 @@
-body {}
-
 #container {
     max-width: 1200px;
-    margin: 0 auto;
 }
 
-aside {
-    background-color: orange;
+.border-bottom {
+    border-color: orange !important;
+    border-width: 2px !important;
 }
-
 
 h1 span {
     font-weight: 400;
@@ -17,4 +14,36 @@ h1 span {
 
 small {
     font-weight: bold;
+}
+
+aside {
+    background-color: orange;
+}
+
+aside h2 {
+    color: orange;
+}
+
+aside #loisir-icons i {
+    border: 2px solid black;
+}
+
+aside img {
+    width: 200px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 960px) {
+    #main {
+        padding-left: 70px !important;
+    }
+}
+
+#main i {
+    color: orange;
+}
+
+#main h2 i {
+    font-size: 45px;
+
 }
