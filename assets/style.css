@@ -94,14 +94,22 @@ a {
 }
 
 
-aside #loisir-icons i {
-    border: 2px solid #333533;
+#photo_de_profil img {
+    width: 50%;
 }
 
 .img-thumbnail {
     padding: 0;
     background-color: rgba(0, 0, 0, 0.2);
     border: 0.25rem solid rgba(0, 0, 0, 0.2);
+}
+
+aside #loisir-icons i {
+    border: 2px solid #333533;
+}
+
+#loisirs {
+    margin-top: auto;
 }
 
 #main h2 i {
@@ -113,15 +121,36 @@ aside #loisir-icons i {
     :root {
         font-size: 20px !important;
     }
+
+    #photo_de_profil img {
+        width: 250px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     :root {
-        font-size: 26px !important;
+        font-size: 22px !important;
     }
+
+    #photo_de_profil img {
+        width: 300px;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
+    :root {
+        font-size: 24px !important;
+    }
+
+    #photo_de_profil img {
+        width: 200px;
+    }
+
+    .img-thumbnail {
+        border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    }
+
     a {
         text-decoration: none;
     }
