@@ -1,438 +1,165 @@
-/* Extra small devices (portrait phones, less than 576px) */
+.text-secondary {
+    color: #cfdbd5 !important;
+}
 
-/* Ici mes variables pour les couleurs */
+.text-primary {
+    color: #F5CB5C !important;
+}
+
+.bg-primary {
+    background-color: #cfdbd5 !important;
+}
+
+.bg-secondary {
+    background-color: #333533 !important;
+}
+
 :root {
-    --primary: #cfdbd5;
-    --primary-darker: rgba(0, 0, 0, 0.2);
-    --secondary: #333533;
-    --tertiary: #F5CB5C;
-    --font-primary: rgb(36, 36, 35);
-    --font-secondary: rgba(36, 36, 35, 0.8);
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 18px !important;
 }
 
-/* Mon image de fond */
-html {
-    background: url(/assets/images/pexels-photo-4039781.jpeg) repeat center fixed;
-}
-
-/* Cette propriété pour éviter les décalages dans les tailles des blocks */
-* {
-    box-sizing: border-box;
-}
-
-/* Ici je déclare les élements généraux pour l'ensemble de la page */
-body {
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4em;
-    color: rgb(36, 36, 35);
-    color: var(--font-primary);
-    line-height: 1.3em;
-    padding: 0 5%;
-    /*ce padding pour que la page soit légerement décallée du fond*/
-}
-
-#container {
-    max-width: 1500px;
-    /*une taille maximum pour que la page reste dans un format portrait*/
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-    /*une ombre pour donner un effet de lévitation à la page*/
-}
-
-/* déclaration des propriété typographique */
 h1,
-h2,
-h3 {
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.4em;
+h2 {
+    font-family: 'Raleway', sans-serif !important;
 }
 
 h1 {
-    font-size: 4em;
-    font-weight: 400;
-    line-height: 1em;
+    font-size: 2.3rem !important;
+    line-height: 2.4rem !important;
 }
 
 h2 {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 600;
-    text-transform: capitalize;
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
 }
 
 h3 {
-    font-size: 1.6em;
-    font-weight: 700;
-    margin-bottom: 5px;
+    font-size: 0.85rem !important;
 }
 
 h4 {
-    color: rgba(36, 36, 35, 0.8);
-    color: var(--font-secondary);
-    font-size: 1.3em;
-    font-weight: 700;
-    margin-bottom: 4px;
+    font-size: 0.7rem !important;
 }
 
-p {
-    text-align: justify;
+h5 {
+    font-size: 0.7rem !important;
+}
+
+em {
+    font-size: 0.65rem !important;
+    line-height: 0.8rem !important;
+}
+
+p,
+li,
+a,
+address {
+    font-size: 0.65rem !important;
+    line-height: 0.85rem !important;
 }
 
 a {
     text-decoration: underline;
-    color: rgb(36, 36, 35);
-    color: var(--font-primary);
 }
 
-strong {
-    font-size: 1.5em;
-    font-weight: 600;
-    line-height: 1.5em;
+.font-400 {
+    font-weight: 400;
 }
 
-/* propriétés du header */
-header {
-    width: 100%;
-    text-align: left;
-}
-
-header p {
-    margin-top: 10px;
-    color: rgba(36, 36, 35, 0.8);
-    color: var(--font-secondary);
-}
-
-header h1 span {
-    color: #F5CB5C;
-    color: var(--tertiary);
+.font-500 {
     font-weight: 500;
 }
 
-.underline {
-    border-bottom: 2px solid #F5CB5C;
-    border-bottom: 2px solid var(--tertiary);
-    padding-bottom: 2px;
+.font-600 {
+    font-weight: 600;
 }
 
-#mobile_header,
-#desktop_header {
-    display: block;
-    width: auto;
+.font-700 {
+    font-weight: 700;
 }
 
-#desktop_header {
-    display: none;
+#container {
+    max-width: 1200px;
 }
 
-/* propriétés particulières au header pour la version mobile */
-#mobile_header {
-    margin: 70px auto;
-    text-align: center;
+.border-bottom {
+    border-color: #F5CB5C !important;
+    border-width: 2px !important;
 }
 
-#mobile_header p {
-    text-align: center;
+.big-dot {
+    font-size: 0.8rem !important;
 }
 
-/* mise en forme des éléments généraux du aside */
-aside {
-    display: flex;
-    flex-direction: column;
-    background-color: #cfdbd5;
-    background-color: var(--primary);
+.small-dot {
+    font-size: 0.5rem !important;
 }
 
-aside h2 {
-    background-color: #333533;
-    background-color: var(--secondary);
-    color: #cfdbd5;
-    color: var(--primary);
-    padding: 0.3em 20px;
+#photo_de_profil img {
+    width: 50%;
+    max-width: 225px;
 }
 
-aside p,
-aside address {
-    padding: 35px 50px 50px 50px;
-    text-indent: 40px;
+.img-thumbnail {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0.25rem solid rgba(0, 0, 0, 0.2);
 }
 
-/* mise en forme des éléments particuliers du aside */
-#photo_de_profil {
-    text-align: center;
+aside #loisir-icons i {
+    border: 2px solid #333533;
 }
 
-#portrait {
-    width: 350px;
-    display: block;
-    margin: 50px auto;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    border: 5px solid var(--primary-darker);
-    border-radius: 50%;
+#loisirs i {
+    font-size: 1.5rem !important;
 }
 
+.icon-main {
+    font-size: 1.6rem !important;
 
-#contact ul li {
-    margin-bottom: 23px;
 }
 
-#contact ul li:last-child {
-    margin-bottom: 0;
-}
-
-
-#loisir-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 40px 30px;
-    flex-wrap: wrap;
-}
-
-#loisir-icons i {
-    font-size: 2em;
-    color: #333533;
-    color: var(--secondary);
-    padding: 0.4em;
-    border: 3px solid #F5CB5C;
-    border: 3px solid var(--tertiary);
-    border-radius: 50%;
-}
-
-/* Mise en forme des éléments généraux de la section principale */
-#main {
-    width: 100%;
-    padding: 0 20px;
-}
-
-#main section {
-    margin: 50px 0;
-}
-
-#main section:last-child {
-    margin: 0;
-}
-
-#main h2 i {
-    display: inline-block;
-    margin-right: 25px;
-    color: #F5CB5C;
-    color: var(--tertiary);
-    vertical-align: middle;
-}
-
-#main h2 {
-    text-align: left;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #F5CB5C;
-    border-bottom: 2px solid var(--tertiary);
-    margin-bottom: 30px;
-}
-
-/* mise en forme des tables */
-#main tr {
-    display: block;
-    margin-bottom: 30px;
-}
-
-#main tr:last-child {
-    margin-bottom: 0;
-}
-
-#main td {
-    display: block;
-    margin-right: 10px;
-}
-
-#main td i {
-    display: none;
-}
-
-/* mise en forme de la rubrique "recommandations" */
-#recommandation_articles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#recommandation_articles h3 {
-    font-size: 1.4em;
-}
-
-#recommandation_articles h4 {
-    font-size: 1.2em;
-}
-
-#recommandation_articles article {
-
-    margin: 0 90px 35px 0;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width:576px) {
-
-    #mobile_header,
-    #mobile_header p {
-        text-align: left;
+@media screen and (min-width: 576px) {
+    :root {
+        font-size: 20px !important;
     }
 
-
-
-
-}
-
-
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width:768px) {
-    #main {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    #main tr {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 30px;
-    }
-
-    #main tr:last-child {
-        margin-bottom: 0;
-    }
-
-    #main td i {
-        display: initial;
-        color: #F5CB5C;
-        color: var(--tertiary);
-    }
-
-    #main td:first-child {
-        margin-right: 10px;
-    }
-
-    #main td:nth-child(2) {
-        flex: 0 0 30%;
-    }
-
-    #main td:last-child {
-        flex: 0 0 65%;
+    #photo_de_profil img {
+        width: 225px;
     }
 }
 
-
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width:1100px) {
-    body {
-        padding: 5%;
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: 22px !important;
     }
 
-    /* switch du header : mobile:off / desktop:on */
-    #mobile_header {
-        display: none;
-    }
-
-    #desktop_header {
-        display: block;
-        margin-top: 80px;
-    }
-
-    /* switch de la disposition des éléments de la page */
-    #container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: stretch;
-    }
-
-    /* changement de la mise en forme de la rubrique aside */
-    aside {
-        flex: 1;
-    }
-
-    /* changement des proportions des marges intérieures */
-    aside p,
-    aside address {
-        padding: 35px 40px 50px 40px;
-    }
-
-    #portrait {
+    #photo_de_profil img {
         width: 250px;
-        margin-top: 50px;
-    }
-
-    /* fixation de la rubrique loisir tout en bas */
-    #loisirs {
-        margin-top: auto;
-    }
-
-    /* changement des proportions de la section principale avec des unités adaptatives */
-    #main {
-        flex: 2;
-        margin-left: 2vw;
-        margin-right: 1.5vw;
     }
 
 }
 
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width:1450px) {
-    body {
-        padding: 80px 5%;
+@media screen and (min-width: 992px) {
+    :root {
+        font-size: 24px !important;
     }
 
-    /* fixation de la page au centre de l'écran */
-    #container {
-        margin: 0 auto;
+    #photo_de_profil img {
+        width: 200px;
     }
 
-    /* changement des tailles de textes, mieux adaptées aux grand écrans */
-    body,
-    em,
-    p,
-    li {
-        font-size: 1.2em;
-        line-height: 1.3em;
+    .img-thumbnail {
+        border: 0.2rem solid rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
-        font-size: 4em;
-        font-weight: 400;
-        line-height: 1em;
+    a {
+        text-decoration: none;
     }
 
-    h2,
-    h3 {
-        line-height: 1.8em;
+    #loisirs {
+        position: absolute;
+        bottom: 20px;
     }
-
-
-    h2 {
-        text-align: center;
-        font-size: 2em;
-        font-weight: 600;
-    }
-
-    h3 {
-        font-size: 1.6em;
-        font-weight: 700;
-        margin-bottom: 5px;
-    }
-
-    h4 {
-        color: rgba(36, 36, 35, 0.8);
-        color: var(--font-secondary);
-        font-size: 1.4em;
-        font-weight: 700;
-        margin-bottom: 4px;
-    }
-
-    strong {
-        font-size: 1.4em;
-        font-weight: 600;
-    }
+}
