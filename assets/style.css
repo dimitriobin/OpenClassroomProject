@@ -15,13 +15,12 @@
 }
 
 :root {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 18px !important;
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: 'Raleway', sans-serif !important;
 }
 
@@ -31,13 +30,8 @@ h1 {
 }
 
 h2 {
-    font-size: 1.05rem !important;
+    font-size: 1.1rem !important;
     line-height: 1.5rem !important;
-}
-
-header h2 {
-    font-size: 1.2rem !important;
-    line-height: 1.6rem !important;
 }
 
 h3 {
@@ -45,7 +39,7 @@ h3 {
 }
 
 h4 {
-    font-size: 0.85rem !important;
+    font-size: 0.75rem !important;
 }
 
 h5 {
@@ -53,7 +47,7 @@ h5 {
 }
 
 em {
-    font-size: 0.85rem;
+    font-size: 0.7rem !important;
     line-height: 0.8rem !important;
 }
 
@@ -61,7 +55,8 @@ p,
 li,
 a,
 address {
-    font-size: 0.8rem !important;
+    font-size: 0.65rem !important;
+    line-height: 0.85rem !important;
 }
 
 a {
@@ -93,9 +88,17 @@ a {
     border-width: 2px !important;
 }
 
+.big-dot {
+    font-size: 0.8rem !important;
+}
+
+.small-dot {
+    font-size: 0.5rem !important;
+}
 
 #photo_de_profil img {
     width: 50%;
+    max-width: 225px;
 }
 
 .img-thumbnail {
@@ -108,8 +111,8 @@ aside #loisir-icons i {
     border: 2px solid #333533;
 }
 
-#loisirs {
-    margin-top: auto;
+#loisirs i {
+    font-size: 1.5rem !important;
 }
 
 #main h2 i {
@@ -123,8 +126,10 @@ aside #loisir-icons i {
     }
 
     #photo_de_profil img {
-        width: 250px;
+        width: 225px;
     }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -133,7 +138,7 @@ aside #loisir-icons i {
     }
 
     #photo_de_profil img {
-        width: 300px;
+        width: 250px;
     }
 
 }
@@ -153,5 +158,14 @@ aside #loisir-icons i {
 
     a {
         text-decoration: none;
+    }
+
+    #loisirs {
+        position: absolute;
+        bottom: 20px;
+    }
+
+    #main h2 i {
+        font-size: 1.8rem !important;
     }
 }
