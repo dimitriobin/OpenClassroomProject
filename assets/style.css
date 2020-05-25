@@ -1,22 +1,29 @@
-.text-secondary {
-    color: #cfdbd5 !important;
-}
-
+/* Overide Bootstrap */
 .text-primary {
-    color: #F5CB5C !important;
+    color: #FFB300 !important;
 }
 
 .bg-primary {
-    background-color: #cfdbd5 !important;
+    background-color: #FFB300 !important;
 }
 
 .bg-secondary {
-    background-color: #333533 !important;
+    background-color: #404040 !important;
 }
 
+.img-thumbnail {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 0.2rem solid rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+/* General Rules */
 :root {
     font-family: 'Roboto', sans-serif !important;
-    font-size: 18px !important;
+    font-size: 1.2rem !important;
 }
 
 h1,
@@ -63,6 +70,9 @@ a {
     text-decoration: underline;
 }
 
+
+
+/* Tools */
 .font-400 {
     font-weight: 400;
 }
@@ -79,79 +89,70 @@ a {
     font-weight: 700;
 }
 
-#container {
-    max-width: 1200px;
-}
-
 .border-bottom {
     border-color: #F5CB5C !important;
     border-width: 2px !important;
 }
 
+.dot-list {
+    vertical-align: bottom;
+}
+
 .big-dot {
-    font-size: 0.8rem !important;
+    font-size: 0.65rem !important;
 }
 
 .small-dot {
-    font-size: 0.5rem !important;
+    font-size: 0.4rem !important;
 }
 
-#photo_de_profil img {
+.img-width {
     width: 50%;
-    max-width: 225px;
+    max-width: 10rem;
 }
 
-.img-thumbnail {
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 0.25rem solid rgba(0, 0, 0, 0.2);
-}
-
-aside #loisir-icons i {
+.icon-border {
     border: 2px solid #333533;
 }
 
-#loisirs i {
-    font-size: 1.5rem !important;
+.icon-hobbies {
+    font-size: 1.2rem !important;
 }
 
 .icon-main {
-    font-size: 1.6rem !important;
-
+    font-size: 1.55rem !important;
+    vertical-align: top !important;
 }
 
+/* Responsive */
 @media screen and (min-width: 576px) {
     :root {
-        font-size: 20px !important;
+        font-size: 1.4rem !important;
     }
 
-    #photo_de_profil img {
-        width: 225px;
+    .img-width {
+        width: 12rem;
     }
 }
 
 @media screen and (min-width: 768px) {
     :root {
-        font-size: 22px !important;
+        font-size: 1.5rem !important;
     }
 
-    #photo_de_profil img {
-        width: 250px;
+    .img-width {
+        width: 14rem;
     }
 
 }
 
 @media screen and (min-width: 992px) {
     :root {
-        font-size: 24px !important;
+        font-size: 1.5rem !important;
     }
 
-    #photo_de_profil img {
-        width: 200px;
-    }
-
-    .img-thumbnail {
-        border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    .img-width {
+        width: 8.5rem;
     }
 
     a {
@@ -160,6 +161,10 @@ aside #loisir-icons i {
 
     #loisirs {
         position: absolute;
-        bottom: 20px;
+        bottom: 0px;
+    }
+
+    .dot-list {
+        vertical-align: top;
     }
 }
