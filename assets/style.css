@@ -125,6 +125,12 @@ a {
 }
 
 /* Responsive */
+@media screen and (max-width: 200px) {
+    body {
+        word-break: break-all;
+    }
+}
+
 @media screen and (min-width: 576px) {
     :root {
         font-size: 1.4rem !important;
